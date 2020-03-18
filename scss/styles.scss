@@ -1,0 +1,25 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+	max-width: 770px;
+  margin: 10px auto;
+  padding: 10px 20px;
+}
+
+video, audio, .mejs__container {
+  margin: 0 auto;
+  display: block;
+}
+
+video, audio, .mejs__container {
+  margin: 0 auto;
+  display: block;
+}
+
+.mejs__container {
+  margin: 0 auto;
+}
