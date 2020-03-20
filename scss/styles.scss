@@ -1,25 +1,65 @@
+$font-primary: aktiv-grotesk, sans-serif;
+$orange: #ffad61;
+
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
+body {
+	margin: 0;
+	font-family: $font-primary;
+	line-height: 2;
+}
+
 .container {
+  width:100%;
 	max-width: 770px;
-  margin: 10px auto;
-  padding: 10px 20px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 768px) {
+  	padding: 20px;
+  }
 }
 
-video, audio, .mejs__container {
-  margin: 0 auto;
-  display: block;
+.content {
+	padding: 0 20px;
+	@media screen and (min-width: 768px) {
+		padding: 0;
+	}
 }
 
-video, audio, .mejs__container {
-  margin: 0 auto;
-  display: block;
+span:hover {
+	cursor: pointer;
 }
 
-.mejs__container {
-  margin: 0 auto;
+.plyr--full-ui input[type=range] {
+  color: $orange;
 }
+
+.plyr__control--overlaid {
+  background: rgba($orange, .8);
+}
+
+.plyr--video .plyr__control.plyr__tab-focus,
+.plyr--video .plyr__control:hover,
+.plyr--video .plyr__control[aria-expanded=true] {
+  background: $orange;
+}
+
+.plyr__control.plyr__tab-focus {
+  box-shadow: 0 0 0 5px rgba($orange, .5);
+}
+
+.plyr__menu__container .plyr__control[role=menuitemradio][aria-checked=true]::before {
+  background: $orange;
+}
+
+
+
+
+
+
+
+
